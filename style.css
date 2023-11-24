@@ -18,72 +18,101 @@ body {
 }
 
 header {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 72px; */
     background-color: #14213d;
     color: #e5e5e5;
-    font-size: 1.2rem;
-    padding-block: 24px;
-    /* position: fixed;
-    width: 100%; */
+    padding: 24px 12px;
 }
 
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    max-width: 400px;
+    justify-content: space-between;
+    width: 100%;
     margin: 0 auto;
     color: #14213d;
 
     position: relative;
 }
 
+
 .colorname {
     font-size: 1.2rem;
     background-color: #e5e5e5;
-    border: 2px solid #14213d;
 
     padding: 0.5em 1em;
     width: 100%;
     display: none;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-main p {
-    /* outline: 2px solid white;
-    border: 2px solid black;
-    border-radius: 20px; */
+
+
+main>p {
     background-color: #e5e5e5;
-    border: 2px solid #14213d;
+    border-bottom: 2px solid #14213d;
     padding: 0.5em 1em;
     font-size: 1.2rem;
 }
 
+
+main div div {
+    /* border-top: 2px solid #14213d; */
+    background-color: #e5e5e5;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    column-gap: 5%;
+    /* padding-inline: 0.5em; */
+
+    & p {
+        grid-column: span 3;
+    }
+}
+
+main div {
+    max-width: 500px;
+    margin-inline: auto;
+    width: 98%;
+}
+
 .newcolor {
-    padding: 0.5em 1.5em;
-    font-size: 1.5rem;
+    height: 3em;
+    font-size: 1.2rem;
     background-color: #14213d;
     border: 2px solid #e5e5e5;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #e5e5e5;
 
     transition: all 0.2s ease;
 }
 
+
+.previouscolor:hover,
+.nextcolor:hover,
 .newcolor:hover {
     cursor: pointer;
     border: 2px solid #14213d;
-    background-color: #e5e5e5;
+    background-color: #14213d33;
     color: #14213d;
 }
+
+
+.previouscolor,
+.nextcolor {
+    background-color: #e5e5e5;
+    color: #14213d;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #14213d;
+    border-radius: 5px;
+    height: 3em;
+    margin-block: auto;
+    /* box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; */
+}
+
+
+
 
 footer {
     /* position: fixed;

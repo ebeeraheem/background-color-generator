@@ -11,5 +11,6 @@ function generateColor() {
 
   body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
   colorName.style.display = "block";
+  colorName.style.borderTop = "2px solid #14213d";
   colorName.textContent = `Color Value: rgb(${red}, ${green}, ${blue})`;
 }

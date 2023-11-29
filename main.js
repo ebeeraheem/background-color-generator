@@ -13,4 +13,41 @@ function generateColor() {
   colorName.style.display = "block";
   colorName.style.borderTop = "2px solid #14213d";
   colorName.textContent = `Color Value: rgb(${red}, ${green}, ${blue})`;
+
+  prevNext.push(colorName.textContent);
 }
+
+// Tracking the color count
+let colorIndex = 0;
+let body = document.querySelector("body"); // making the body variable global
+
+// || Logic for next and previous buttons
+const prevNext = [];
+
+// Function to show the previous color
+function showPreviousColor() {
+  if (colorIndex > 0) {
+    colorIndex--;
+    setColorFromIndex();
+  }
+}
+
+// Function to show the next color
+function showNextColor() {
+  if (colorIndex < prevNext.length - 1) {
+    colorIndex++;
+    setColorFromIndex();
+  }
+}
+
+// Function to set the color based on the current index
+function setColorFromIndex() {
+  body.style.backgroundColor = prevNext[colorIndex].slice(13);
+  colorName.textContent = `Color Value: ${prevNext[colorIndex]}`;
+}
+
+document
+  .querySelector(".previouscolor")
+  .addEventListener("click", showPreviousColor);
+
+document.querySelector(".nextcolor").addEventListener("click", showNextColor);

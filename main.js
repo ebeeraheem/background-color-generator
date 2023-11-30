@@ -14,15 +14,16 @@ function generateColor() {
   colorName.style.borderTop = "2px solid #14213d";
   colorName.textContent = `Color Value: rgb(${red}, ${green}, ${blue})`;
 
-  prevNext.push(colorName.textContent);
+  prevNext.push(colorName.textContent.slice(13));
+  colorIndex++; //Increment colorIndex
 }
-
-// Tracking the color count
-let colorIndex = 0;
-let body = document.querySelector("body"); // making the body variable global
 
 // || Logic for next and previous buttons
 const prevNext = [];
+
+// Tracking the color count
+let colorIndex = -1;
+let body = document.querySelector("body"); // making the body variable global
 
 // Function to show the previous color
 function showPreviousColor() {
@@ -42,7 +43,7 @@ function showNextColor() {
 
 // Function to set the color based on the current index
 function setColorFromIndex() {
-  body.style.backgroundColor = prevNext[colorIndex].slice(13);
+  body.style.backgroundColor = prevNext[colorIndex];
   colorName.textContent = `Color Value: ${prevNext[colorIndex]}`;
 }
 

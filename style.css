@@ -1,139 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #e5e5e5;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #e5e5e5;
 
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100dvh;
-    text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  text-align: center;
 }
 
 header {
-    background-color: #14213d;
-    color: #e5e5e5;
-    padding: 24px 12px;
+  background-color: #14213d;
+  color: #e5e5e5;
+  padding: 24px 12px;
 }
-
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    color: #14213d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  color: #14213d;
 
-    position: relative;
+  position: relative;
 }
-
 
 .colorname {
-    font-size: 1.2rem;
-    background-color: #e5e5e5;
+  font-size: 1.2rem;
+  background-color: #e5e5e5;
 
-    padding: 0.5em 1em;
-    width: 100%;
-    display: none;
+  padding: 0.5em 1em;
+  width: 100%;
+  display: none;
 }
 
-
-
-main>p {
-    background-color: #e5e5e5;
-    border-bottom: 2px solid #14213d;
-    padding: 0.5em 1em;
-    font-size: 1.2rem;
+main > p {
+  background-color: #e5e5e5;
+  border-bottom: 2px solid #14213d;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
 }
-
 
 main div div {
-    border-top: 0;
-    background-color: #e5e5e5;
-    padding-bottom: 5px;
-    display: grid;
-    grid-template-columns: 20% 50% 20%;
-    column-gap: 5%;
-    /* padding-inline: 0.5em; */
-    max-width: 500px;
-    margin-inline: auto;
-    width: 98%;
+  border-top: 0;
+  background-color: #e5e5e5;
+  padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  column-gap: 5%;
+  /* padding-inline: 0.5em; */
+  max-width: 500px;
+  margin-inline: auto;
+  width: 98%;
 
-    & p {
-        grid-column: span 3;
-    }
+  & p {
+    grid-column: span 3;
+  }
 }
 
 main div {
-    width: 100%;
-    background-color: #e5e5e5;
+  width: 100%;
+  background-color: #e5e5e5;
 }
 
 .newcolor {
-    height: 3em;
-    font-size: 1.2rem;
-    background-color: #14213d;
-    border: 2px solid #e5e5e5;
-    border-radius: 5px;
-    color: #e5e5e5;
+  height: 3em;
+  font-size: 1.2rem;
+  background-color: #14213d;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  color: #e5e5e5;
 
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-
-.previouscolor:hover,
-.nextcolor:hover,
+.previouscolor:hover:not([disabled]),
+.nextcolor:hover:not([disabled]),
 .newcolor:hover {
-    cursor: pointer;
-    border: 2px solid #14213d;
-    background-color: #14213d33;
-    color: #14213d;
+  cursor: pointer;
+  border: 2px solid #14213d;
+  background-color: #14213d33;
+  color: #14213d;
 }
-
 
 .previouscolor,
 .nextcolor {
-    background-color: #e5e5e5;
-    color: #14213d;
-    outline: 0;
-    cursor: pointer;
-    border: 1px solid #14213d;
-    border-radius: 5px;
-    height: 3em;
-    margin-block: auto;
-    /* box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+  background-color: #e5e5e5;
+  color: #14213d;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid #14213d;
+  border-radius: 5px;
+  height: 3em;
+  margin-block: auto;
+  /* box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; */
 }
 
-
-
+.previouscolor:disabled,
+.nextcolor:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 
 footer {
-    /* position: fixed;
+  /* position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    width: 100%;
-    background-color: #14213d;
-    color: #e5e5e5;
-    font-size: 1.2rem;
-    padding-block: 12px;
+  width: 100%;
+  background-color: #14213d;
+  color: #e5e5e5;
+  font-size: 1.2rem;
+  padding-block: 12px;
 }
 
 footer a {
-    color: inherit;
+  color: inherit;
 }
 
 footer a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }

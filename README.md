@@ -21,7 +21,7 @@ For local setup and development:
 - Click on the 'Previous color' button to visit previously generated colors.
 - After visiting a previous color, you can go to the next color by clicking the 'Next color' button.
 
-_Note that clicking the **'Generate new color'** button deletes all next colors (if any)_.
+**Note**: Clicking the **'Generate new color'** button will delete all subsequent colors.
 
 ## Key Features
 

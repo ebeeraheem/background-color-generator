@@ -9,7 +9,6 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #e5e5e5;
-
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
@@ -29,14 +28,12 @@ main {
   width: 100%;
   margin: 0 auto;
   color: #14213d;
-
   position: relative;
 }
 
 .colorname {
   font-size: 1.2rem;
   background-color: #e5e5e5;
-
   padding: 0.5em 1em;
   width: 100%;
   display: none;
@@ -56,7 +53,6 @@ main div div {
   display: grid;
   grid-template-columns: 20% 50% 20%;
   column-gap: 5%;
-  /* padding-inline: 0.5em; */
   max-width: 500px;
   margin-inline: auto;
   width: 98%;
@@ -78,7 +74,6 @@ main div {
   border: 2px solid #e5e5e5;
   border-radius: 5px;
   color: #e5e5e5;
-
   transition: all 0.2s ease;
 }
 
@@ -101,8 +96,6 @@ main div {
   border-radius: 5px;
   height: 3em;
   margin-block: auto;
-  /* box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; */
 }
 
 .previouscolor:disabled,
@@ -112,12 +105,6 @@ main div {
 }
 
 footer {
-  /* position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
   width: 100%;
   background-color: #14213d;
   color: #e5e5e5;

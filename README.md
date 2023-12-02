@@ -8,7 +8,7 @@ This application is a fundamental color generator crafted using HTML, CSS, and J
 
 ### Live Project Access
 
-Explore the live version of the **<a href="https://background-color-generator-mu.vercel.app/" target="_blank">Background Color Generator</a>**.
+Explore the live version of the **[Background Color Generator](https://background-color-generator-mu.vercel.app/)**.
 
 For local setup and development:
 
@@ -74,8 +74,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Grateful acknowledgment to the dedicated members of the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeopUFSGxZxyfZuSzpFKGvfYP-xbEixIvLWneUaSncgcoyKAQ/viewform" target="_blank">Programmers.NG</a> WhatsApp group for their invaluable support and collaborative spirit.
-- Icon graciously provided by <a href='https://iconpacks.net/?utm_source=link-attribution&utm_content=10830' target="_blank">Iconpacks</a>, adding a touch of visual excellence to the project.
+- Grateful acknowledgment to the dedicated members of the [Programmers.NG WhatsApp group](https://docs.google.com/forms/d/e/1FAIpQLSeopUFSGxZxyfZuSzpFKGvfYP-xbEixIvLWneUaSncgcoyKAQ/viewform) for their invaluable support and collaborative spirit.
+- Icon graciously provided by [Iconpacks](https://iconpacks.net/?utm_source=link-attribution&utm_content=10830), adding a touch of visual excellence to the project.
 
 ## Contact
 

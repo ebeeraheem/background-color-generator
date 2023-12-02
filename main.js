@@ -44,7 +44,8 @@ function showPreviousColor() {
 
     // next button should be activated whenever this function runs
     nextColor.removeAttribute("disabled");
-  } else {
+  }
+  if (colorIndex <= 0) {
     previousColor.setAttribute("disabled", "");
   }
 }
@@ -57,7 +58,8 @@ function showNextColor() {
 
     // previous button should be activated whenever this function runs
     previousColor.removeAttribute("disabled");
-  } else {
+  }
+  if (colorIndex >= prevNext.length - 1) {
     nextColor.setAttribute("disabled", "");
   }
 }
